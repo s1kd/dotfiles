@@ -22,7 +22,7 @@ set laststatus=2
 set wildmode=list:longest
 
 set list
-set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
+set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
 set expandtab
 set tabstop=2
 set shiftwidth=2
