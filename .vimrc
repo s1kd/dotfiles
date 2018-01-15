@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
+Plug 'lervag/vimtex'
 call plug#end()
 
 set fenc=utf-8
@@ -51,6 +52,7 @@ imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
+"neosnippet
 " SuperTab like snippets behavior.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 "imap <expr><TAB>
@@ -64,6 +66,3 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
-"let g:neosnippet#enable_snipmate_compatibility = 1
-" Tell Neosnippet about the other snippets
-"let g:neosnippet#snippets_directory='~/.vim/plugged/vim-snippets/snippets'
